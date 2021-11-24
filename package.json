@@ -9,6 +9,8 @@
     "watch": "ng build --watch --configuration development",
     "watch-lib:ui-components": "ng build ui-components --watch",
     "watch-libs": "npm-run-all clean --parallel watch-lib:*",
+    "build-lib:ui-components": "ng build ui-components --prod",
+    "build-all": "ng build ui-components --prod && ng build --prod",
     "test": "ng test"
   },
   "private": true,
