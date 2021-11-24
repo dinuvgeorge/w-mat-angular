@@ -6,15 +6,17 @@ import {Route, RouterModule} from "@angular/router";
 
 import {AppComponent} from './app.component';
 import {WmatToolbarModule} from "ui-components";
+import {LandingComponent} from './landing/landing.component';
 
 const routes: Route[] = [
-  {path: '', redirectTo: 'components', pathMatch: 'full'},
+  {path: '', component: LandingComponent},
   {path: 'components', loadChildren: () => import('./component/component.module').then(m => m.ComponentModule)}
 ];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

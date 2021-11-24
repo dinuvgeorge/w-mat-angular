@@ -1,0 +1,15 @@
+<svg width="256" height="270" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="514" width="514" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" fill="#B3B3B3" d="m127.606,0.341l-126.757,44.609l20.031,166.072l106.86,58.732l107.412,-59.528l20.023,-166.066l-127.569,-43.819z"/>
+  <path id="svg_2" fill="#8b5cf6" d="m242.532,53.758l-115.222,-39.292l0,241.256l96.561,-53.441l18.66,-148.523l0.001,0z"/>
+  <path id="svg_3" fill="#4c1d95" d="m15.073,54.466l17.165,148.525l95.07,52.731l0,-241.26l-112.234,40.003l-0.001,0.001z"/>
+  <text stroke="null" transform="matrix(7.026721166482673,0,0,6.935345441865478,-402.8310212295925,-348.0841734153147) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_9" y="78.429531" x="64.00059" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000"/>
+  <text stroke="null" transform="matrix(8.39108692313556,0,0,7.650130040521788,-810.6880542475111,-624.327305483972) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="26" id="svg_10" y="108.279986" x="99.597391" stroke-opacity="null" stroke-width="0" fill="#b2b2b2">W</text>
+ </g>
+</svg>
