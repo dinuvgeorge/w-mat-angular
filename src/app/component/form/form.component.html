@@ -1,0 +1,10 @@
+<h1> Reactive Contact Form Example </h1>
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <wmat-altitude-textbox [formControlName]="'km'"></wmat-altitude-textbox>
+  <br/>
+  <input type="submit" value="Send">
+</form>
+
+
+

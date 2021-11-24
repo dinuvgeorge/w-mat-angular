@@ -1,0 +1,5 @@
+<input type="text"
+       [(ngModel)]="value"
+       [disabled]="disabled"
+       (ngModelChange)="onChangeCallback($event)"
+       (blur)="onTouchedCallback()">

@@ -1,0 +1,9 @@
+<input #input
+       [type]=type
+       [(ngModel)]="value"
+       [disabled]="disabled"
+       (ngModelChange)="onChangeCallback($event)"
+       (blur)="onTouchedCallback()"
+       (focusin)="focusin($event)"
+       (focusout)="focusout($event)"
+> {{unit}}
