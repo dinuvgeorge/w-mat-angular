@@ -6,16 +6,16 @@ const noop = () => {
 const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,
   multi: true,
-  useExisting: forwardRef(() => WmatTextboxComponent),
+  useExisting: forwardRef(() => WmatInputComponent),
 };
 
 @Component({
-  selector: 'wmat-textbox',
-  templateUrl: './wmat-textbox.component.html',
-  styleUrls: ['./wmat-textbox.component.css'],
+  selector: 'wmat-input',
+  templateUrl: './wmat-input.component.html',
+  styleUrls: ['./wmat-input.component.css'],
   providers: [CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
 })
-export class WmatTextboxComponent implements ControlValueAccessor {
+export class WmatInputComponent implements ControlValueAccessor {
 
   @ViewChild('input', {static: false}) input: ElementRef | undefined;
 

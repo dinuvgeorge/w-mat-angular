@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {Route, RouterModule} from "@angular/router";
 import {TextboxDefaultFunctionalitiesComponent} from "./textbox-default-functionalities.component";
-import {WmatTextboxModule} from "ui-components";
+import {WmatInputModule} from "ui-components";
 
 const routes: Route[] = [
   {path: '', component: TextboxDefaultFunctionalitiesComponent}
@@ -13,7 +13,7 @@ const routes: Route[] = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    WmatTextboxModule,
+    WmatInputModule,
   ],
   exports: [
     TextboxDefaultFunctionalitiesComponent

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WmatTextboxComponent } from './wmat-textbox.component';
+import { WmatInputComponent } from './wmat-input.component';
 
-describe('WmatTextboxComponent', () => {
-  let component: WmatTextboxComponent;
-  let fixture: ComponentFixture<WmatTextboxComponent>;
+describe('WmatInputComponent', () => {
+  let component: WmatInputComponent;
+  let fixture: ComponentFixture<WmatInputComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WmatTextboxComponent ]
+      declarations: [ WmatInputComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WmatTextboxComponent);
+    fixture = TestBed.createComponent(WmatInputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

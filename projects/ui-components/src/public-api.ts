@@ -10,8 +10,8 @@ export * from './lib/wmat-grids/wmat-grid/wmat-grid.component';
 export * from './lib/wmat-grids/wmat-grid/wmat-grid.module';
 
 // inputs
-export * from './lib/wmat-inputs/wmat-textbox/wmat-textbox.component';
-export * from './lib/wmat-inputs/wmat-textbox/wmat-textbox.module';
+export * from './lib/wmat-inputs/wmat-input/wmat-input.component';
+export * from './lib/wmat-inputs/wmat-input/wmat-input.module';
 
 export * from './lib/wmat-inputs/wmat-altitude-textbox/wmat-altitude-textbox.component';
 export * from './lib/wmat-inputs/wmat-altitude-textbox/wmat-altitude-textbox.module';

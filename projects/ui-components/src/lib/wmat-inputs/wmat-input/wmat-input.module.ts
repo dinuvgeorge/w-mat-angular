@@ -4,12 +4,12 @@ import {FormsModule} from "@angular/forms";
 
 import {MatInputModule} from "@angular/material/input";
 
-import {WmatTextboxComponent} from "./wmat-textbox.component";
+import {WmatInputComponent} from "./wmat-input.component";
 
 
 @NgModule({
   declarations: [
-    WmatTextboxComponent
+    WmatInputComponent
   ],
   imports: [
     CommonModule,
@@ -17,8 +17,8 @@ import {WmatTextboxComponent} from "./wmat-textbox.component";
     MatInputModule
   ],
   exports: [
-    WmatTextboxComponent
+    WmatInputComponent
   ]
 })
-export class WmatTextboxModule {
+export class WmatInputModule {
 }
