@@ -1,11 +1,19 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import {WmatButtonDirective} from './wmat-button.directive';
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    WmatButtonDirective
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatButtonModule
+  ],
+  exports: [
+    WmatButtonDirective
   ]
 })
 export class WmatButtonModule {
