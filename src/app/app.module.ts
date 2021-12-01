@@ -2,7 +2,10 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CommonModule} from "@angular/common";
+import {FlexModule} from "@angular/flex-layout";
 import {Route, RouterModule} from "@angular/router";
+
+import {MONACO_PATH} from '@materia-ui/ngx-monaco-editor';
 
 import {AppComponent} from './app.component';
 import {WmatToolbarModule} from "ui-components";
@@ -19,13 +22,19 @@ const routes: Route[] = [
     LandingComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
-    CommonModule,
+    FlexModule,
     RouterModule.forRoot(routes),
-    WmatToolbarModule
+    WmatToolbarModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: MONACO_PATH,
+      useValue: 'https://unpkg.com/monaco-editor@0.24.0/min/vs'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

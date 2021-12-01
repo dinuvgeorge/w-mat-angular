@@ -1,4 +1,4 @@
-<wmat-wmat-grid [dataSource]="demoDataSource">
+<wmat-grid [dataSource]="demoDataSource">
   <wmat-columns>
     <wmat-column field="template" headerText="Template">
       <ng-template #template>
@@ -10,5 +10,30 @@
     <wmat-column field="weight" headerText="Weight"></wmat-column>
     <wmat-column field="symbol" headerText="Symbol"></wmat-column>
   </wmat-columns>
-</wmat-wmat-grid>
+</wmat-grid>
 
+<div class="html-editor-container" fxLayout="column">
+  <h2 class="mat-headline">Html</h2>
+  <ngx-monaco-editor fxFlex [options]="{
+    minimap: {enabled:false},
+    readOnly: true,
+    theme: 'myCustomTheme',
+    language: 'html',
+    roundedSelection: true,
+    autoIndent: 'full'
+  }" [(ngModel)]="htmlCode">
+  </ngx-monaco-editor>
+</div>
+
+<div class="ts-editor-container" fxLayout="column">
+  <h2 class="mat-headline">TS</h2>
+  <ngx-monaco-editor fxFlex [options]="{
+    minimap: {enabled:false},
+    readOnly: true,
+    theme: 'myCustomTheme',
+    language: 'typescript',
+    roundedSelection: true,
+    autoIndent: 'full'
+  }" [(ngModel)]="tsCode">
+  </ngx-monaco-editor>
+</div>

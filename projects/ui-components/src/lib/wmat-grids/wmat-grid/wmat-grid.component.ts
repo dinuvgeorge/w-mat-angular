@@ -7,7 +7,7 @@ import {DEFAULT_PAGE_SETTINGS, WmatPageSettings} from "./paginator/model/wmat-pa
 import {MatSort} from "@angular/material/sort";
 
 @Component({
-  selector: 'wmat-wmat-grid',
+  selector: 'wmat-grid',
   templateUrl: './wmat-grid.component.html',
   styleUrls: ['./wmat-grid.component.css']
 })
