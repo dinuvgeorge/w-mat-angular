@@ -1,12 +1,22 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
+import {MatDialogModule} from "@angular/material/dialog";
 
+import {WmatDialogComponent} from './wmat-dialog/wmat-dialog.component';
+import {WmatDialogServices} from "./wmat-dialog.services";
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    WmatDialogComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatDialogModule
+  ],
+  providers: [
+    WmatDialogServices
   ]
 })
-export class WmatDialogModule { }
+export class WmatDialogModule {
+}

@@ -12,13 +12,14 @@ const routes: Route[] = [{
     {
       path: 'altitude-textbox',
       loadChildren: () => import('./inputs/altitude-textbox/altitude-textbox.module').then(m => m.AltitudeTextboxModule)
-    }
+    },
+    {path: 'dialog', loadChildren: () => import('./layout/dialog/dialog.module').then(m => m.DialogModule)},
   ]
 }];
 
 @NgModule({
   declarations: [
-    ComponentComponent
+    ComponentComponent,
   ],
   imports: [
     CommonModule,
