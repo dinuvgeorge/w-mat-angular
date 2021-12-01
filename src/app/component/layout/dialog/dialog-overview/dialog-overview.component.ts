@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-dialog-overview',
   templateUrl: './dialog-overview.component.html',
   styleUrls: ['./dialog-overview.component.scss']
 })
-export class DialogOverviewComponent implements OnInit {
+export class DialogOverviewComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
