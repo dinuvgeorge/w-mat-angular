@@ -10,10 +10,14 @@ import {MONACO_PATH} from '@materia-ui/ngx-monaco-editor';
 import {AppComponent} from './app.component';
 import {WmatToolbarModule} from "ui-components";
 import {LandingComponent} from './landing/landing.component';
+import {CodeEditorComponent} from './common/code-editor/code-editor.component';
 
 const routes: Route[] = [
   {path: '', component: LandingComponent},
-  {path: 'components', loadChildren: () => import('./component/component.module').then(m => m.ComponentModule)}
+  {
+    path: 'components',
+    loadChildren: () => import('./demo-component/demo-component.module').then(m => m.DemoComponentModule)
+  }
 ];
 
 @NgModule({

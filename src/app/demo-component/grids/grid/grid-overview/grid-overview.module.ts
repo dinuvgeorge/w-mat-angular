@@ -1,11 +1,16 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {Route, RouterModule} from "@angular/router";
-import {WmatGridModule} from 'ui-components';
-import {GridOverviewComponent} from './grid-overview.component';
-import {MonacoEditorModule} from '@materia-ui/ngx-monaco-editor';
 import {FormsModule} from "@angular/forms";
 import {FlexModule} from "@angular/flex-layout";
+import {Route, RouterModule} from "@angular/router";
+
+import {WmatTabModule} from 'ui-components';
+import {WmatGridModule} from 'ui-components';
+
+import {CodeEditorModule} from "../../../../common/code-editor/code-editor.module";
+
+import {GridOverviewComponent} from './grid-overview.component';
+
 
 const routes: Route[] = [
   {path: '', component: GridOverviewComponent}
@@ -21,10 +26,11 @@ const routes: Route[] = [
   imports: [
     CommonModule,
     FormsModule,
-    WmatGridModule,
+    FlexModule,
     RouterModule.forChild(routes),
-    MonacoEditorModule,
-    FlexModule
+    WmatGridModule,
+    WmatTabModule,
+    CodeEditorModule
   ]
 })
 export class GridOverviewModule {

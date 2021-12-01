@@ -1,12 +1,24 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
+import {MatTabsModule} from "@angular/material/tabs";
 
+import {WmatTabGroupComponent} from './wmat-tab-group/wmat-tab-group.component';
+import {WmatTabComponent} from './wmat-tab/wmat-tab.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    WmatTabGroupComponent,
+    WmatTabComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatTabsModule
+  ],
+  exports: [
+    WmatTabGroupComponent,
+    WmatTabComponent
   ]
 })
-export class WmatTabModule { }
+export class WmatTabModule {
+}

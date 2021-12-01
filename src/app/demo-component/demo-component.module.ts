@@ -1,10 +1,10 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {ComponentComponent} from './component.component';
+import {DemoComponentComponent} from './demo-component.component';
 import {Route, RouterModule} from "@angular/router";
 
 const routes: Route[] = [{
-  path: '', component: ComponentComponent,
+  path: '', component: DemoComponentComponent,
   children: [
     {path: '', redirectTo: 'grid'},
     {path: 'grid', loadChildren: () => import('./grids/grid/grid.module').then(m => m.GridModule)},
@@ -19,15 +19,15 @@ const routes: Route[] = [{
 
 @NgModule({
   declarations: [
-    ComponentComponent,
+    DemoComponentComponent,
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
   ],
   exports: [
-    ComponentComponent
+    DemoComponentComponent
   ]
 })
-export class ComponentModule {
+export class DemoComponentModule {
 }

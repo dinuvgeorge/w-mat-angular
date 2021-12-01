@@ -1,7 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {GridComponent} from './grid.component';
 import {Route, RouterModule} from "@angular/router";
+
+import {GridComponent} from './grid.component';
 
 const routes: Route[] = [{
   path: '', component: GridComponent,
