@@ -8,6 +8,10 @@ import {MonacoEditorConstructionOptions} from "@materia-ui/ngx-monaco-editor/lib
 })
 export class CodeEditorComponent implements OnInit {
 
+
+  @Input()
+  height = 900;
+
   @Input()
   code = ''
 

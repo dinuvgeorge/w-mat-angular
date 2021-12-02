@@ -1,43 +1,43 @@
-<div style="visibility: hidden; position: fixed"
-     [style.left]="contextMenuPosition.x"
-     [style.top]="contextMenuPosition.y"
-     [matMenuTriggerFor]="rootContextMenu">
-</div>
+<!--<div style="visibility: hidden; position: fixed"-->
+<!--     [style.left]="contextMenuPosition.x"-->
+<!--     [style.top]="contextMenuPosition.y"-->
+<!--     [matMenuTriggerFor]="rootContextMenu">-->
+<!--</div>-->
 
-<em style="cursor:pointer;"
-    *ngIf="showOpenButton"
-    [matMenuTriggerFor]="rootContextMenu">
-</em>
+<!--<em style="cursor:pointer;"-->
+<!--    *ngIf="showOpenButton"-->
+<!--    [matMenuTriggerFor]="rootContextMenu">-->
+<!--</em>-->
 
-<mat-menu #rootContextMenu (closed)="closedMethod($event)">
-  <div (mouseleave)="mouseLeaveMethod()">
-    <ng-container *ngIf="template != null; else directiveMenu">
-      <ng-template matMenuContent let-data="data">
-        <ng-container *ngTemplateOutlet="template; context: {$implicit: data}"></ng-container>
-      </ng-template>
-    </ng-container>
+<!--<mat-menu #rootContextMenu (closed)="closedMethod($event)">-->
+<!--  <div (mouseleave)="mouseLeaveMethod()">-->
+<!--    <ng-container *ngIf="template != null; else directiveMenu">-->
+<!--      <ng-template matMenuContent let-data="data">-->
+<!--        <ng-container *ngTemplateOutlet="template; context: {$implicit: data}"></ng-container>-->
+<!--      </ng-template>-->
+<!--    </ng-container>-->
 
-    <ng-template #directiveMenu>
-      <ng-container *ngFor="let menu of wmatMenuItemDirectives.toArray()">
-        <ng-container *ngIf="menu.template != null; else simpleMenuItem">
-          <ng-container *ngTemplateOutlet="menu.template"></ng-container>
-        </ng-container>
+<!--    <ng-template #directiveMenu>-->
+<!--      <ng-container *ngFor="let menu of wmatMenuItemDirectives.toArray()">-->
+<!--        <ng-container *ngIf="menu.template != null; else simpleMenuItem">-->
+<!--          <ng-container *ngTemplateOutlet="menu.template"></ng-container>-->
+<!--        </ng-container>-->
 
-        <ng-template #simpleMenuItem let-data="data">
-          <div *ngIf="menu.subMenu == null; else subMenuItem" mat-menu-item
-               (click)="menu.itemSelectedMethod()"
-               (mouseover)="menu.itemOverMethod()"
-               [disabled]="menu.disabled">
-            <em *ngIf="menu.icon" [ngClass]="menu.icon"></em><span>{{menu.label}}</span>
-          </div>
-          <ng-template #subMenuItem>
-            <div mat-menu-item [matMenuTriggerFor]="menu.subMenu.matMenu"
-                 (mouseover)="menu.itemOverMethod()">
-              <em *ngIf="menu.icon" [ngClass]="menu.icon"></em><span>{{menu.label}}</span>
-            </div>
-          </ng-template>
-        </ng-template>
-      </ng-container>
-    </ng-template>
-  </div>
-</mat-menu>
+<!--        <ng-template #simpleMenuItem let-data="data">-->
+<!--          <div *ngIf="menu.subMenu == null; else subMenuItem" mat-menu-item-->
+<!--               (click)="menu.itemSelectedMethod()"-->
+<!--               (mouseover)="menu.itemOverMethod()"-->
+<!--               [disabled]="menu.disabled">-->
+<!--            <em *ngIf="menu.icon" [ngClass]="menu.icon"></em><span>{{menu.label}}</span>-->
+<!--          </div>-->
+<!--          <ng-template #subMenuItem>-->
+<!--            <div mat-menu-item [matMenuTriggerFor]="menu.subMenu.matMenu"-->
+<!--                 (mouseover)="menu.itemOverMethod()">-->
+<!--              <em *ngIf="menu.icon" [ngClass]="menu.icon"></em><span>{{menu.label}}</span>-->
+<!--            </div>-->
+<!--          </ng-template>-->
+<!--        </ng-template>-->
+<!--      </ng-container>-->
+<!--    </ng-template>-->
+<!--  </div>-->
+<!--</mat-menu>-->

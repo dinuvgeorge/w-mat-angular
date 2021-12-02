@@ -1,30 +1,35 @@
 <wmat-tab-group>
   <wmat-tab label="Demo">
-<!--    <wmat-grid [dataSource]="demoDataSource">-->
-<!--      <wmat-columns>-->
-<!--        <wmat-column field="template" headerText="Template">-->
-<!--          <ng-template #template>-->
-<!--            Template Column-->
-<!--          </ng-template>-->
-<!--        </wmat-column>-->
-<!--        <wmat-column field="name" headerText="Name"></wmat-column>-->
-<!--        <wmat-column field="position" headerText="Position"></wmat-column>-->
-<!--        <wmat-column field="weight" headerText="Weight"></wmat-column>-->
-<!--        <wmat-column field="symbol" headerText="Symbol"></wmat-column>-->
-<!--      </wmat-columns>-->
-<!--    </wmat-grid>-->
+    <ng-template #template>
+      <wmat-grid [dataSource]="demoDataSource">
+        <wmat-columns>
+          <wmat-column field="template" headerText="Template">
+            <ng-template #template>
+              Template Column
+            </ng-template>
+          </wmat-column>
+          <wmat-column field="name" headerText="Name"></wmat-column>
+          <wmat-column field="position" headerText="Position"></wmat-column>
+          <wmat-column field="weight" headerText="Weight"></wmat-column>
+          <wmat-column field="symbol" headerText="Symbol"></wmat-column>
+        </wmat-columns>
+      </wmat-grid>
+    </ng-template>
   </wmat-tab>
 
   <wmat-tab label="<>Source">
-<!--    <div class="html-editor-container" fxLayout="column">-->
-<!--      <h2 class="mat-headline">Html</h2>-->
-<!--      <app-code-editor type="html" [code]="htmlCode"></app-code-editor>-->
-<!--    </div>-->
-<!--    <div class="ts-editor-container" fxLayout="column">-->
-<!--      <h2 class="mat-headline">TS</h2>-->
-<!--      <app-code-editor type="typescript" [code]="tsCode"></app-code-editor>-->
-<!--    </div>-->
+    <ng-template #template>
+      <div fxLayout="column">
+        <h2 class="mat-headline">Html</h2>
+        <app-code-editor [height]="300" type="html" [code]="htmlCode"></app-code-editor>
+      </div>
+      <div fxLayout="column">
+        <h2 class="mat-headline">TS</h2>
+        <app-code-editor [height]="850" type="typescript" [code]="tsCode"></app-code-editor>
+      </div>
+    </ng-template>
   </wmat-tab>
 </wmat-tab-group>
+
 
 

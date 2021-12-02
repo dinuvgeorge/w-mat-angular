@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'wmat-wmat-toolbar',
+  selector: 'wmat-toolbar',
   templateUrl: './wmat-toolbar.component.html',
   styleUrls: ['./wmat-toolbar.component.css']
 })

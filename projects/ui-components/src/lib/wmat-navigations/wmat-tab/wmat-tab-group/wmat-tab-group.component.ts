@@ -1,6 +1,5 @@
-import {Component, ContentChildren, QueryList, ViewChild} from '@angular/core';
-import {MatTab, MatTabGroup} from "@angular/material/tabs";
-import {WmatTabComponent} from "../wmat-tab/wmat-tab.component";
+import {Component, ContentChildren, QueryList} from '@angular/core';
+import {WmatTabDirective} from "../wmat-tab/wmat-tab.directive";
 
 
 @Component({
@@ -10,23 +9,7 @@ import {WmatTabComponent} from "../wmat-tab/wmat-tab.component";
 })
 export class WmatTabGroupComponent {
 
-  @ViewChild(MatTabGroup)
-  public tabGroup: MatTabGroup | undefined = undefined;
-
-  @ContentChildren(WmatTabComponent)
-  protected tabs: QueryList<WmatTabComponent> | undefined = undefined;
-
-  public ngAfterViewInit() {
-    if (this.tabs) {
-      const matTabsFromQueryList = this.tabs.map((tab: WmatTabComponent) => tab.matTab);
-      const list = new QueryList<MatTab>();
-      list.reset([matTabsFromQueryList]);
-
-      if (this.tabGroup) {
-        this.tabGroup._tabs = list;
-        this.tabGroup?.ngAfterContentInit();
-      }
-    }
-  }
+  @ContentChildren(WmatTabDirective, {descendants: true})
+  wmatTabsDirectives: QueryList<WmatTabDirective> | undefined;
 
 }

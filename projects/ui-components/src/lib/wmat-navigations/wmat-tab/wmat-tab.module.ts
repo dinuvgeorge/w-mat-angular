@@ -4,12 +4,12 @@ import {CommonModule} from '@angular/common';
 import {MatTabsModule} from "@angular/material/tabs";
 
 import {WmatTabGroupComponent} from './wmat-tab-group/wmat-tab-group.component';
-import {WmatTabComponent} from './wmat-tab/wmat-tab.component';
+import {WmatTabDirective} from './wmat-tab/wmat-tab.directive';
 
 @NgModule({
   declarations: [
     WmatTabGroupComponent,
-    WmatTabComponent
+    WmatTabDirective
   ],
   imports: [
     CommonModule,
@@ -17,7 +17,7 @@ import {WmatTabComponent} from './wmat-tab/wmat-tab.component';
   ],
   exports: [
     WmatTabGroupComponent,
-    WmatTabComponent
+    WmatTabDirective
   ]
 })
 export class WmatTabModule {
