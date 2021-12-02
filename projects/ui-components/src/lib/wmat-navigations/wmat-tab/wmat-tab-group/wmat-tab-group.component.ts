@@ -1,5 +1,5 @@
 import {Component, ContentChildren, QueryList} from '@angular/core';
-import {WmatTabDirective} from "../wmat-tab/wmat-tab.directive";
+import {WmatTabComponent} from "../wmat-tab/wmat-tab.component";
 
 
 @Component({
@@ -9,7 +9,6 @@ import {WmatTabDirective} from "../wmat-tab/wmat-tab.directive";
 })
 export class WmatTabGroupComponent {
 
-  @ContentChildren(WmatTabDirective, {descendants: true})
-  wmatTabsDirectives: QueryList<WmatTabDirective> | undefined;
+  @ContentChildren(WmatTabComponent) tabItems: QueryList<WmatTabComponent> | undefined;
 
 }

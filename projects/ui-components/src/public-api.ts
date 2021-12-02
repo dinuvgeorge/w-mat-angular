@@ -20,8 +20,10 @@ export * from './lib/wmat-inputs/wmat-altitude-textbox/wmat-altitude-textbox.mod
 export * from './lib/wmat-navigations/wmat-sidenav/wmat-sidenav.component';
 export * from './lib/wmat-navigations/wmat-sidenav/wmat-sidenav.module';
 
+export * from './lib/wmat-navigations/wmat-tab/wmat-tab/wmat-tab.component';
+export * from './lib/wmat-navigations/wmat-tab/wmat-tab-content/wmat-tab-content.component';
 export * from './lib/wmat-navigations/wmat-tab/wmat-tab-group/wmat-tab-group.component';
-export * from './lib/wmat-navigations/wmat-tab/wmat-tab/wmat-tab.directive';
+export * from './lib/wmat-navigations/wmat-tab/wmat-tab-header/wmat-tab-header.component';
 export * from './lib/wmat-navigations/wmat-tab/wmat-tab.module';
 
 export * from './lib/wmat-navigations/wmat-toolbar/wmat-toolbar.component';

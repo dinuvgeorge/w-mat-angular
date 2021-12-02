@@ -1,6 +1,7 @@
 <wmat-tab-group>
-  <wmat-tab label="Demo">
-    <ng-template #template>
+  <wmat-tab>
+    <wmat-tab-header title="Demo"></wmat-tab-header>
+    <wmat-tab-content>
       <wmat-grid [dataSource]="demoDataSource">
         <wmat-columns>
           <wmat-column field="template" headerText="Template">
@@ -14,11 +15,12 @@
           <wmat-column field="symbol" headerText="Symbol"></wmat-column>
         </wmat-columns>
       </wmat-grid>
-    </ng-template>
+    </wmat-tab-content>
   </wmat-tab>
 
-  <wmat-tab label="<>Source">
-    <ng-template #template>
+  <wmat-tab>
+    <wmat-tab-header title="<>Source"></wmat-tab-header>
+    <wmat-tab-content>
       <div fxLayout="column">
         <h2 class="mat-headline">Html</h2>
         <app-code-editor [height]="300" type="html" [code]="htmlCode"></app-code-editor>
@@ -27,7 +29,7 @@
         <h2 class="mat-headline">TS</h2>
         <app-code-editor [height]="850" type="typescript" [code]="tsCode"></app-code-editor>
       </div>
-    </ng-template>
+    </wmat-tab-content>
   </wmat-tab>
 </wmat-tab-group>
 

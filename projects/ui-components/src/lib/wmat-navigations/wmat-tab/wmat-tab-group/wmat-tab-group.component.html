@@ -1,7 +1,12 @@
 <mat-tab-group>
-  <mat-tab [label]="tab.label" *ngFor="let tab of wmatTabsDirectives?.toArray()">
-    <ng-container *ngIf="tab.template != null">
-      <ng-container *ngTemplateOutlet="tab.template"></ng-container>
+  <mat-tab *ngFor="let item of tabItems">
+    <ng-template mat-tab-label
+      *ngIf="item !== undefined && item.itemHeader !== undefined && item.itemHeader.headerTemplate !== undefined">
+      <ng-container *ngTemplateOutlet="item.itemHeader.headerTemplate"></ng-container>
+    </ng-template>
+
+    <ng-container *ngIf="item !== undefined && item.contentTemplate !== undefined">
+      <ng-container *ngTemplateOutlet="item.contentTemplate"></ng-container>
     </ng-container>
   </mat-tab>
 </mat-tab-group>

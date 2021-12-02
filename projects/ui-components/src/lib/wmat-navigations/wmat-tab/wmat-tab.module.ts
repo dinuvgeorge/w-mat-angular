@@ -3,13 +3,17 @@ import {CommonModule} from '@angular/common';
 
 import {MatTabsModule} from "@angular/material/tabs";
 
+import {WmatTabComponent} from './wmat-tab/wmat-tab.component';
+import {WmatTabContentComponent} from './wmat-tab-content/wmat-tab-content.component';
 import {WmatTabGroupComponent} from './wmat-tab-group/wmat-tab-group.component';
-import {WmatTabDirective} from './wmat-tab/wmat-tab.directive';
+import {WmatTabHeaderComponent} from './wmat-tab-header/wmat-tab-header.component';
 
 @NgModule({
   declarations: [
     WmatTabGroupComponent,
-    WmatTabDirective
+    WmatTabComponent,
+    WmatTabContentComponent,
+    WmatTabHeaderComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +21,9 @@ import {WmatTabDirective} from './wmat-tab/wmat-tab.directive';
   ],
   exports: [
     WmatTabGroupComponent,
-    WmatTabDirective
+    WmatTabComponent,
+    WmatTabContentComponent,
+    WmatTabHeaderComponent
   ]
 })
 export class WmatTabModule {
