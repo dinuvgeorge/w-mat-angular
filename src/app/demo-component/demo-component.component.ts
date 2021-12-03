@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
+import {demoComponentsList} from "./demo-components";
 
 @Component({
   selector: 'app-component',
   templateUrl: './demo-component.component.html',
   styleUrls: ['./demo-component.component.scss']
 })
-export class DemoComponentComponent implements OnInit {
+export class DemoComponentComponent {
 
-  constructor() { }
+  componentsList = demoComponentsList;
 
-  ngOnInit(): void {
-  }
+  selectedComponentParent = 'Grid';
+  selectedComponentChild = 'Overview';
 
 }
