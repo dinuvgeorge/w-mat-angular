@@ -1,18 +1,27 @@
 <!-- Sidebar -->
-<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width: 25%">
   <H1 class="w3-bar-item">Components</H1>
 
   <ul>
     <li *ngFor="let parentComp of componentsList">
-      <h3>{{parentComp.name}}</h3>
+      <h3>{{ parentComp.name }}</h3>
       <ul>
         <li>
-          <a routerLink="{{parentComp.route}}"
-             (click)="selectedComponentParent = parentComp.name">{{parentComp.name}}</a>
+          <a
+            routerLink="{{ parentComp.route }}"
+            (click)="selectedComponentParent = parentComp.name"
+            >{{ parentComp.name }}</a
+          >
           <ul>
             <li *ngFor="let childComp of parentComp.children">
-              <a routerLink="{{childComp.route}}"
-                 (click)="selectedComponentChild = childComp.name; selectedComponentParent = parentComp.name">{{childComp.name}}</a>
+              <a
+                routerLink="{{ childComp.route }}"
+                (click)="
+                  selectedComponentChild = childComp.name;
+                  selectedComponentParent = parentComp.name
+                "
+                >{{ childComp.name }}</a
+              >
             </li>
           </ul>
         </li>
@@ -22,9 +31,8 @@
 </div>
 
 <!-- Page Content -->
-<div style="margin-left:25%; padding: 20px">
-
-  <h2>{{selectedComponentParent}} {{selectedComponentChild}}</h2>
+<div style="margin-left: 25%; padding: 20px">
+  <h2>{{ selectedComponentParent }} {{ selectedComponentChild }}</h2>
 
   <router-outlet></router-outlet>
 </div>

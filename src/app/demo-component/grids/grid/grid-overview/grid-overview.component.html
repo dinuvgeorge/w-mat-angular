@@ -5,9 +5,7 @@
       <wmat-grid [dataSource]="demoDataSource">
         <wmat-columns>
           <wmat-column field="template" headerText="Template">
-            <ng-template #template>
-              Template Column
-            </ng-template>
+            <ng-template #template> Template Column </ng-template>
           </wmat-column>
           <wmat-column field="name" headerText="Name"></wmat-column>
           <wmat-column field="position" headerText="Position"></wmat-column>
@@ -23,15 +21,20 @@
     <wmat-tab-content>
       <div fxLayout="column">
         <h2 class="mat-headline">Html</h2>
-        <app-code-editor [height]="300" type="html" [code]="htmlCode"></app-code-editor>
+        <app-code-editor
+          [height]="300"
+          type="html"
+          [code]="htmlCode"
+        ></app-code-editor>
       </div>
       <div fxLayout="column">
         <h2 class="mat-headline">TS</h2>
-        <app-code-editor [height]="850" type="typescript" [code]="tsCode"></app-code-editor>
+        <app-code-editor
+          [height]="850"
+          type="typescript"
+          [code]="tsCode"
+        ></app-code-editor>
       </div>
     </wmat-tab-content>
   </wmat-tab>
 </wmat-tab-group>
-
-
-

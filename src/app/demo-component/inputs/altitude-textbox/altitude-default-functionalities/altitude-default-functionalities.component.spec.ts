@@ -8,9 +8,8 @@ describe('TextboxDefaultFunctionalitiesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AltitudeDefaultFunctionalitiesComponent ]
-    })
-    .compileComponents();
+      declarations: [AltitudeDefaultFunctionalitiesComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

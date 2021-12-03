@@ -1,11 +1,11 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {Route, RouterModule} from "@angular/router";
-import {AltitudeDefaultFunctionalitiesComponent} from "./altitude-default-functionalities.component";
-import {WmatAltitudeTextboxModule} from "ui-components";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Route, RouterModule } from '@angular/router';
+import { AltitudeDefaultFunctionalitiesComponent } from './altitude-default-functionalities.component';
+import { WmatAltitudeTextboxModule } from 'ui-components';
 
 const routes: Route[] = [
-  {path: '', component: AltitudeDefaultFunctionalitiesComponent}
+  { path: '', component: AltitudeDefaultFunctionalitiesComponent },
 ];
 
 @NgModule({
@@ -15,9 +15,6 @@ const routes: Route[] = [
     RouterModule.forChild(routes),
     WmatAltitudeTextboxModule,
   ],
-  exports: [
-    AltitudeDefaultFunctionalitiesComponent
-  ]
+  exports: [AltitudeDefaultFunctionalitiesComponent],
 })
-export class AltitudeDefaultFunctionalitiesModule {
-}
+export class AltitudeDefaultFunctionalitiesModule {}

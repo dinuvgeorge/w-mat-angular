@@ -1,25 +1,20 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import {WmatAltitudeTextboxModule, WmatTextboxModule} from 'ui-components';
+import { WmatAltitudeTextboxModule, WmatTextboxModule } from 'ui-components';
 
-import {FormComponent} from './form.component';
+import { FormComponent } from './form.component';
 
 @NgModule({
-  declarations: [
-    FormComponent
-  ],
+  declarations: [FormComponent],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     WmatTextboxModule,
-    WmatAltitudeTextboxModule
+    WmatAltitudeTextboxModule,
   ],
-  exports: [
-    FormComponent
-  ]
+  exports: [FormComponent],
 })
-export class FormModule {
-}
+export class FormModule {}
