@@ -9,12 +9,16 @@ export * from './lib/wmat-grids/wmat-grid/paginator/model/wmat-page-settings';
 export * from './lib/wmat-grids/wmat-grid/wmat-grid.component';
 export * from './lib/wmat-grids/wmat-grid/wmat-grid.module';
 
-// inputs
-export * from './lib/wmat-inputs/wmat-input/wmat-input.component';
-export * from './lib/wmat-inputs/wmat-input/wmat-input.module';
+// buttons
+export * from './lib/wmat-buttons/wmat-button/wmat-button.component';
+export * from './lib/wmat-buttons/wmat-button/wmat-button.module';
 
-export * from './lib/wmat-inputs/wmat-altitude-textbox/wmat-altitude-textbox.component';
-export * from './lib/wmat-inputs/wmat-altitude-textbox/wmat-altitude-textbox.module';
+// inputs
+export * from './lib/wmat-inputs/wmat-input-text/wmat-input-text.component';
+export * from './lib/wmat-inputs/wmat-input-text/wmat-input-text.module';
+
+export * from './lib/wmat-inputs/wmat-input-numeric/wmat-input-numeric.component';
+export * from './lib/wmat-inputs/wmat-input-numeric/wmat-input-numeric.module';
 
 //navigations
 export * from './lib/wmat-navigations/wmat-sidenav/wmat-sidenav.component';

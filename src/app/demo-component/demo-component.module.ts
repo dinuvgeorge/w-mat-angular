@@ -14,18 +14,24 @@ const routes: Route[] = [
         loadChildren: () =>
           import('./grids/grid/grid.module').then((m) => m.GridModule),
       },
+
       {
-        path: 'textbox',
+        path: 'button',
         loadChildren: () =>
-          import('./inputs/textbox/textbox.module').then(
-            (m) => m.TextboxModule
+          import('./buttons/button/button.module').then((m) => m.ButtonModule),
+      },
+      {
+        path: 'input-numeric',
+        loadChildren: () =>
+          import('./inputs/input-numeric/input-numeric-textbox.module').then(
+            (m) => m.InputNumericTextboxModule
           ),
       },
       {
-        path: 'altitude-textbox',
+        path: 'input-text',
         loadChildren: () =>
-          import('./inputs/altitude-textbox/altitude-textbox.module').then(
-            (m) => m.AltitudeTextboxModule
+          import('./inputs/input-text/input-text.module').then(
+            (m) => m.InputTextModule
           ),
       },
       {
