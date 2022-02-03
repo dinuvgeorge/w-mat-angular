@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "wmat-angular",
     "public": "dist/ui-angular-components",
     "ignore": [
       "firebase.json",
